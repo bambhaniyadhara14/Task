@@ -1,4 +1,4 @@
-var product = ["Pen", "Pencil", "Bottle"];
+
 var bill = 0;
 
 while (true) {
