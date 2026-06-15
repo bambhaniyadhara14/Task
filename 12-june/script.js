@@ -3,7 +3,7 @@
 for (; ;) {
 
 
-    alert("----Welcome To Our Programme----");
+    alert(" Welcome To Our Programme ");
 
     let randomNumber = parseInt(Math.random() * 100) + 1;
 
