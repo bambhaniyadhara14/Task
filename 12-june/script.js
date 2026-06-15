@@ -14,7 +14,7 @@ for (; ;) {
     let isWinner = false;
 
 
-    while (attempts < maxAttempts) {
+    for (; ;) {
 
         let userGuess = prompt("Enter a number between 1 to 100");
 
@@ -40,6 +40,10 @@ for (; ;) {
 
         attempts++;
 
+        if (attempts > maxAttempts) {
+            break;
+        }
+
 
         if (userGuess > randomNumber) {
             alert(" Too High!");
@@ -59,7 +63,7 @@ for (; ;) {
     }
 
 
-    if ( attempts === maxAttempts) {
+    if (attempts === maxAttempts) {
         alert("Game Over!");
         alert("Correct Number was: " + randomNumber);
     }
