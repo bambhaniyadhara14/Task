@@ -40,9 +40,12 @@ for (; ;) {
 
         attempts++;
 
+        
+
         if (attempts > maxAttempts) {
             break;
         }
+
 
 
         if (userGuess > randomNumber) {
