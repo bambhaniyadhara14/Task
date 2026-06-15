@@ -2,6 +2,9 @@
 
 for (; ;) {
 
+
+    alert("----Welcome To Our Programme----");
+
     let randomNumber = parseInt(Math.random() * 100) + 1;
 
     console.log(randomNumber);
@@ -56,7 +59,7 @@ for (; ;) {
     }
 
 
-    if (!isWinner && attempts === maxAttempts) {
+    if ( attempts === maxAttempts) {
         alert("Game Over!");
         alert("Correct Number was: " + randomNumber);
     }
