@@ -13,7 +13,6 @@ const counter = document.getElementById("counter");
 const dotsContainer = document.getElementById("dots");
 
 
-
 function createDots() {
 
     for (let i = 0; i < images.length; i++) {
@@ -96,12 +95,9 @@ function updateDots() {
 
 document.getElementById("next").addEventListener("click", nextSlide);
 
-
-
 document.getElementById("prev").addEventListener("click", prevSlide);
 
 createDots();
 
 showImage(currentIndex);
 
-setInterval(nextSlide, 3000);
