@@ -18,7 +18,6 @@ function createDots() {
     for (let i = 0; i < images.length; i++) {
 
         let dot = document.createElement("span");
-
         dot.classList.add("dot");
 
         dot.addEventListener("click", function () {
@@ -26,11 +25,8 @@ function createDots() {
             currentIndex = i;
 
             showImage(currentIndex);
-
         });
-
         dotsContainer.appendChild(dot);
-
     }
 
 }
@@ -38,45 +34,32 @@ function createDots() {
 function showImage(index) {
 
     image.src = images[index];
-
     updateCounter();
 
     updateDots();
-
 }
 
 function nextSlide() {
-
-    currentIndex++;
-
-    if (currentIndex == images.length) {
-
+    if (currentIndex == images.length - 1) {
         currentIndex = 0;
-
+    } else {
+        currentIndex++;
     }
-
     showImage(currentIndex);
-
 }
 
 function prevSlide() {
-
-    currentIndex--;
-
-    if (currentIndex < 0) {
-
+    if (currentIndex == 0) {
         currentIndex = images.length - 1;
-
+    } else {
+        currentIndex--;
     }
-
     showImage(currentIndex);
-
 }
 
 function updateCounter() {
 
     counter.innerHTML = `Image ${currentIndex + 1} of ${images.length}`;
-
 }
 
 function updateDots() {
@@ -92,7 +75,6 @@ function updateDots() {
     dots[currentIndex].classList.add("active");
 
 }
-
 document.getElementById("next").addEventListener("click", nextSlide);
 
 document.getElementById("prev").addEventListener("click", prevSlide);
