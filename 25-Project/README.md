@@ -71,7 +71,9 @@ That's it! 🎉
 
 Watch the project demo here:
 
-👉 **https://drive.google.com/file/d/1O5KhQ8x5hMLK5_T0xIDycr9-amlWvtXv/view?usp=drivesdk**
+👉 **https://drive.google.com/file/d/1O5KhQ8x5hMLK5_T0xIDycr9-amlWvtXv/view?usp=sharing**
+
+
 
 
 
