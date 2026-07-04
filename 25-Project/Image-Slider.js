@@ -6,11 +6,11 @@ const images = [
     "Image/image-5.avif"
 ];
 
-let currentIndex = 0;
+    let currentIndex = 0;
 
-const image = document.getElementById("sliderImage");
-const counter = document.getElementById("counter");
-const dotsContainer = document.getElementById("dots");
+    const image = document.getElementById("sliderImage");
+    const counter = document.getElementById("counter");
+    const dotsContainer = document.getElementById("dots");
 
 
 function createDots() {
