@@ -47,7 +47,7 @@ Image-Slider/
 1. Download or Clone this repository.
 
 ```bash
-git clone https://github.com/bambhaniyadhara14/Image-Slider.git
+git clone https://github.com/bambhaniyadhara14/25-Project
 ```
 
 2. Open the project folder.
